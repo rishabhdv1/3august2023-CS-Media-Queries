@@ -1,0 +1,98 @@
+/* Element Selector */
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 200px;
+    line-height: 200px;
+    background: #9933cc;
+    padding-left: 20px;
+    color: #fff;
+}
+/* Direct Child Selector*/
+header > h1{
+    margin: 0px;
+}
+
+main{
+    min-height: 1500px;
+    border: 1px dashed #000;
+    clear: both;
+}
+main > aside:first-child{
+    width: 25%;
+    height: 100%;
+    border: 1px dashed red;
+    float: left
+}
+main > aside > ul{
+    list-style: none;
+}
+main > aside > ul > li > button{
+    background-color: #0099cc;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+}
+main > section{
+    width: 50%;
+    height: 100%;
+    border: 1px dashed red;
+    float: left
+}
+main > aside:last-child{
+    width: 24%;
+    height: 100%;
+    border: 1px dashed red;
+    float: left
+}
+footer{
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    background-color: #0099cc;
+    color: #fff;
+    text-align: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 674px){
+    main > aside:first-child{
+        width: 100%;
+        min-height: 300px;
+    }
+    main > section{
+        width: 100%;
+        min-height: 500px;
+    }
+    main > aside:last-child{
+        width: 100%;
+        min-height: 400px;
+    }
+}
+@media only screen and (min-width: 675px) and (max-width: 844px){
+    main > aside:first-child{
+        width: 25%;
+        min-height: 300px;
+    }
+    main > section{
+        width: 74%;
+        min-height: 500px;
+    }
+    main > aside:last-child{
+        width: 100%;
+        min-height: 400px;
+    }
+}
+@media only screen and (min-width: 845px){
+    main > aside:first-child{
+        width: 25%;
+    }
+    main > section{
+        width: 50%;
+    }
+    main > aside:last-child{
+        width: 24%;
+    }
+}
